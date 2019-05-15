@@ -5,7 +5,7 @@ module.exports = function( req, res, next) {
     res.header('Access-Control-Allow-Origin', '*')
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'),
     //os headers abaixo estão sendo colocados, precisam ser suportados pela minha api
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, authorization')
     next()
     // para finalizar, vou lá no meu server e adiciono esse trecho de codigo: const allowCors = require('./cors'), para permitir cross origin para minha api
   }
